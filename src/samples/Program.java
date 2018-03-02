@@ -9,6 +9,8 @@ public final class Program {
 		assert isMainMethodPresent();
 		
 		assert Void.class.equals(Program.class.getDeclaredMethod("main", String[].class).getReturnType());
+		
+		assert Number.class.isAssignableFrom(Integer.class);
 	}
 	
 	private static boolean isMainMethodPresent ()
