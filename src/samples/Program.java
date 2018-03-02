@@ -4,9 +4,11 @@ import java.lang.reflect.Modifier;
 
 public final class Program {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws NoSuchMethodException
 	{
 		assert isMainMethodPresent();
+		
+		assert Void.class.equals(Program.class.getDeclaredMethod("main", String[].class).getReturnType());
 	}
 	
 	private static boolean isMainMethodPresent ()
