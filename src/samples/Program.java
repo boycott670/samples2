@@ -7,6 +7,8 @@ public final class Program {
 	public static void main(String[] args)
 	{
 		assert isMainMethodPresent();
+		
+		assert args != null && args.length != 0;
 	}
 	
 	private static boolean isMainMethodPresent ()
